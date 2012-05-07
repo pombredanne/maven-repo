@@ -148,6 +148,7 @@
     </dependencies>
     <modules>
         <module>xbib-core</module>
+        <module>xbib-compress</module>
         <module>xbib-charset</module>
         <module>xbib-jacc</module>
         <module>xbib-query</module>
@@ -159,9 +160,7 @@
         <module>xbib-oai</module>
         <module>xbib-berkeleydb</module>
         <module>xbib-elements-mab</module>
-        <module>xbib-cache</module>
         <module>xbib-elements-lia</module>
-        <module>xbib-compress</module>
         <module>xbib-tools</module>
         <module>xbib-logging</module>
     </modules>
