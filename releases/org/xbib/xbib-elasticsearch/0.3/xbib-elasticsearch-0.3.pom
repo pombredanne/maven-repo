@@ -22,6 +22,12 @@
         </dependency>
         <dependency>
             <groupId>org.xbib</groupId>
+            <artifactId>xbib-elements-mapper</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.xbib</groupId>
             <artifactId>xbib-logging</artifactId>
             <version>${project.version}</version>
             <type>jar</type>

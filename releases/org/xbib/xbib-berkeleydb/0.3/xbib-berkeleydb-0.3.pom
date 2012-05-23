@@ -12,14 +12,22 @@
     <dependencies>
         <dependency>
             <groupId>org.xbib</groupId>
-            <artifactId>xbib-core</artifactId>
+            <artifactId>xbib-elements-mapper</artifactId>
             <version>${project.version}</version>
+            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.sleepycat</groupId>
             <artifactId>je</artifactId>
             <version>4.1.7</version>
             <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.xbib</groupId>
+            <artifactId>xbib-logging</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+            <scope>test</scope>            
         </dependency>
     </dependencies>
     <repositories>
