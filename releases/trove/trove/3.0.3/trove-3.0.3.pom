@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>trove</groupId>
+    <artifactId>trove</artifactId>
+    <version>3.0.3</version>
+    <name>High speed regular and primitive collections for Java</name>
+    <packaging>jar</packaging>
+    <licenses>
+      <license>
+        <name>Lesser GNU Public License Version 2.1</name>
+        <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</url>
+        <distribution>repo</distribution>
+      </license>
+    </licenses>
+    <distributionManagement>
+        <repository>
+            <id>repo</id>
+            <url>https://github.com/xbib/maven-repo/raw/master/releases</url>
+        </repository>
+    </distributionManagement>
+</project>
