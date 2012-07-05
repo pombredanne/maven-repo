@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>joda-time</groupId>
+  <artifactId>joda-time</artifactId>
+  <version>2.1</version>
+  <name>Joda Time</name>
+  <packaging>jar</packaging>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <properties>
+    <maven.compile.source>1.6</maven.compile.source>
+    <maven.compile.target>1.6</maven.compile.target>
+  </properties>
+    <distributionManagement>
+        <repository>
+            <id>repo</id>
+            <url>https://github.com/xbib/maven-repo/raw/master/releases</url>
+        </repository>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+            	<groupId>org.apache.maven.plugins</groupId>
+            	<artifactId>maven-enforcer-plugin</artifactId>
+            	<version>1.1</version>
+            	<executions>
+            		<execution>
+            			<id>enforce-versions</id>
+            			<phase>validate</phase>
+            			<goals>
+            				<goal>enforce</goal>
+            			</goals>
+            			<configuration>
+            				<rules>
+            					<requireJavaVersion>
+            						<version>[1.6,1.7)</version>
+            					</requireJavaVersion>
+            				</rules>
+            			</configuration>
+            		</execution>
+                 </executions>
+            </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>2.3.2</version>
+          <configuration>
+            <encoding>UTF-8</encoding>
+            <source>${maven.compile.source}</source>
+            <target>${maven.compile.target}</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.3</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>2.5</version>
+          <configuration>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.7</version>
+          <executions>
+            <execution>
+              <phase>compile</phase>
+              <configuration>
+                <target>
+                  <property name="tz.src" value="${project.basedir}/src/main/resources/org/joda/time/tz/src"/>
+                  <property name="tz.dst" value="${project.build.directory}/generated-sources/org/joda/time/tz/data"/>
+                  <mkdir dir="${tz.dst}"/>
+                  <java classname="org.joda.time.tz.ZoneInfoCompiler" fork="true" failonerror="true">
+                    <classpath refid="maven.compile.classpath"/>
+                    <sysproperty key="org.joda.time.DateTimeZone.Provider" value="org.joda.time.tz.UTCProvider"/>
+                    <arg line="-src ${tz.src} -dst ${tz.dst}"/>
+                    <arg value="africa"/>
+                    <arg value="antarctica"/>
+                    <arg value="asia"/>
+                    <arg value="australasia"/>
+                    <arg value="europe"/>
+                    <arg value="northamerica"/>
+                    <arg value="southamerica"/>
+                    <arg value="pacificnew"/>
+                    <arg value="etcetera"/>
+                    <arg value="backward"/>
+                    <arg value="systemv"/>
+                  </java>
+                </target>
+              </configuration>
+              <goals>
+                <goal>run</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.12</version>
+          <configuration>
+            <forkMode>none</forkMode>
+            <childDelegation>true</childDelegation>
+            <skip>false</skip>
+            <reportFormat>plain</reportFormat>
+            <disableXmlReport>false</disableXmlReport>
+            <includes>
+              <include>**/TestAllPackages.java</include>
+            </includes>
+            <excludes>
+              <exclude>**/*$*</exclude>
+            </excludes>
+            <systemPropertyVariables>
+              <!-- enforce stable tmp dir (e.g. for Mac OS X) -->
+              <java.io.tmpdir>/tmp</java.io.tmpdir>
+              <file.encoding>UTF-8</file.encoding>
+              <java.net.preferIPv4Stack>true</java.net.preferIPv4Stack>
+              <!--- the following does not work, use fork mode none and MAVEN_OPTS="-Duser.language=en" mvn install  -->
+              <user.language>en</user.language>
+              <user.country>US</user.country>
+              <user.variant>US</user.variant>
+            </systemPropertyVariables>
+            <argLine>-Xmx256m -Xms64m -XX:PermSize=64m -XX:MaxPermSize=64m</argLine>
+          </configuration>
+        </plugin>
+      </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.joda</groupId>
+      <artifactId>joda-convert</artifactId>
+      <version>1.2</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
