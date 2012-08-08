@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.ibm.icu</groupId>
+    <artifactId>icu4j</artifactId>
+    <version>4.8.1.1</version>
+    <name>International Components for Unicode</name>
+    <packaging>pom</packaging>
+  <licenses>
+    <license>
+      <name>ICU4J Software License</name>
+      <url>http://source.icu-project.org/repos/icu/icu/trunk/license.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <modules>
+        <module>icu4j-core</module>
+        <module>icu4j-charset</module>
+        <module>icu4j-collate</module>
+        <module>icu4j-translit</module>
+        <module>icu4j-localespi</module>
+        <module>icu4j-currdata</module>
+        <module>icu4j-regiondata</module>
+        <module>icu4j-langdata</module>
+        <module>icu4j-test-framework</module>
+        <module>icu4j-core-test</module>
+    </modules>
+</project>
