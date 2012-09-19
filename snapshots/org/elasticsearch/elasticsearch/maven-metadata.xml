@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.elasticsearch</groupId>
+  <artifactId>elasticsearch</artifactId>
+  <versioning>
+    <versions>
+      <version>0.20.0.Beta1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120919080108</lastUpdated>
+  </versioning>
+</metadata>
