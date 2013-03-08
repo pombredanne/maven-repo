@@ -5,74 +5,74 @@
   <version>1.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20130221.213334</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20130308.094046</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
-    <lastUpdated>20130221213334</lastUpdated>
+    <lastUpdated>20130308094046</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
         <extension>tar.gz</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
         <extension>tar.bz2</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
         <extension>zip</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>alephseq2xml</classifier>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>elasticsearch-gnd</classifier>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>elasticsearch-medline</classifier>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>elasticsearch-ce</classifier>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>elasticsearch-ezb</classifier>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>elasticsearch-zdb</classifier>
         <extension>jar</extension>
-        <value>1.0-20130221.213334-1</value>
-        <updated>20130221213334</updated>
+        <value>1.0-20130308.094046-2</value>
+        <updated>20130308094046</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
