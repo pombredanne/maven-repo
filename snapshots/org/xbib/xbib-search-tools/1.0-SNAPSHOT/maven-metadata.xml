@@ -5,26 +5,26 @@
   <version>1.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20130308.094046</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20130503.121617</timestamp>
+      <buildNumber>3</buildNumber>
     </snapshot>
-    <lastUpdated>20130308094046</lastUpdated>
+    <lastUpdated>20130503121617</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0-20130308.094046-2</value>
-        <updated>20130308094046</updated>
+        <value>1.0-20130503.121617-3</value>
+        <updated>20130503121617</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0-20130308.094046-2</value>
-        <updated>20130308094046</updated>
+        <value>1.0-20130503.121617-3</value>
+        <updated>20130503121617</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
         <extension>tar.gz</extension>
-        <value>1.0-20130308.094046-2</value>
-        <updated>20130308094046</updated>
+        <value>1.0-20130503.121617-3</value>
+        <updated>20130503121617</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
@@ -73,6 +73,18 @@
         <extension>jar</extension>
         <value>1.0-20130308.094046-2</value>
         <updated>20130308094046</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>content</classifier>
+        <extension>jar</extension>
+        <value>1.0-20130503.121617-3</value>
+        <updated>20130503121617</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>elasticsearch</classifier>
+        <extension>jar</extension>
+        <value>1.0-20130503.121617-3</value>
+        <updated>20130503121617</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
