@@ -5,26 +5,26 @@
   <version>1.0-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20130610.125654</timestamp>
-      <buildNumber>9</buildNumber>
+      <timestamp>20130708.075337</timestamp>
+      <buildNumber>10</buildNumber>
     </snapshot>
-    <lastUpdated>20130610125654</lastUpdated>
+    <lastUpdated>20130708075337</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.0-20130610.125654-9</value>
-        <updated>20130610125654</updated>
+        <value>1.0-20130708.075337-10</value>
+        <updated>20130708075337</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.0-20130610.125654-9</value>
-        <updated>20130610125654</updated>
+        <value>1.0-20130708.075337-10</value>
+        <updated>20130708075337</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
         <extension>tar.gz</extension>
-        <value>1.0-20130610.125654-9</value>
-        <updated>20130610125654</updated>
+        <value>1.0-20130708.075337-10</value>
+        <updated>20130708075337</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>src</classifier>
@@ -59,14 +59,14 @@
       <snapshotVersion>
         <classifier>content</classifier>
         <extension>jar</extension>
-        <value>1.0-20130610.125654-9</value>
-        <updated>20130610125654</updated>
+        <value>1.0-20130708.075337-10</value>
+        <updated>20130708075337</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>elasticsearch</classifier>
         <extension>jar</extension>
-        <value>1.0-20130610.125654-9</value>
-        <updated>20130610125654</updated>
+        <value>1.0-20130708.075337-10</value>
+        <updated>20130708075337</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
